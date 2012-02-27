@@ -1,0 +1,51 @@
+<!-- BEGIN_INCLUDE(bridgetable:insert) -->
+    <bridgetable:insert key1="#[map-payload:key1]" key2="#[map-payload:key2]" config-ref="myConfig"/>
+<!-- END_INCLUDE(bridgetable:insert) -->
+
+<!-- BEGIN_INCLUDE(bridgetable:upsert-by-key1) -->
+    <bridgetable:upsert-by-key1 key1="#[map-payload:key1]" key2="#[map-payload:key2]" config-ref="myConfig"/>
+<!-- END_INCLUDE(bridgetable:upsert-by-key1) -->
+
+<!-- BEGIN_INCLUDE(bridgetable:upsert-by-key2) -->
+    <bridgetable:upsert-by-key2 key1="#[map-payload:key1]" key2="#[map-payload:key2]" config-ref="myConfig"/>
+<!-- END_INCLUDE(bridgetable:upsert-by-key2) -->
+
+<!-- BEGIN_INCLUDE(bridgetable:update-by-key1) -->
+    <bridgetable:update-by-key1 key1="#[map-payload:key1]" newKey2="#[map-payload:key2]" config-ref="myConfig"/>
+<!-- END_INCLUDE(bridgetable:update-by-key1) -->
+
+<!-- BEGIN_INCLUDE(bridgetable:update-by-key2) -->
+    <bridgetable:update-by-key2 key2="#[map-payload:key2]" newKey1="#[map-payload:key1]" config-ref="myConfig"/>
+<!-- END_INCLUDE(bridgetable:update-by-key2) -->
+
+<!-- BEGIN_INCLUDE(bridgetable:retrieve-by-key1) -->
+    <bridgetable:retrieve-by-key1 key1="#[map-payload:key1]" config-ref="myConfig"/>
+<!-- END_INCLUDE(bridgetable:retrieve-by-key1) -->
+
+<!-- BEGIN_INCLUDE(bridgetable:retrieve-by-key2) -->
+    <bridgetable:retrieve-by-key2 key2="#[map-payload:key2]" config-ref="myConfig"/>
+<!-- END_INCLUDE(bridgetable:retrieve-by-key2) -->
+
+<!-- BEGIN_INCLUDE(bridgetable:remove-by-key1) -->
+    <bridgetable:remove-by-key1 key1="#[map-payload:key1]" config-ref="myConfig"/>
+<!-- END_INCLUDE(bridgetable:remove-by-key1) -->
+
+<!-- BEGIN_INCLUDE(bridgetable:remove-by-key2) -->
+    <bridgetable:remove-by-key2 key2="#[map-payload:key2]" config-ref="myConfig"/>
+<!-- END_INCLUDE(bridgetable:remove-by-key2) -->
+
+<!-- BEGIN_INCLUDE(bridgetable:contains-key1) -->
+    <bridgetable:contains-key1 key1="#[map-payload:key1]" config-ref="myConfig"/>
+<!-- END_INCLUDE(bridgetable:contains-key1) -->
+
+<!-- BEGIN_INCLUDE(bridgetable:contains-key2) -->
+    <bridgetable:contains-key2 key2="#[map-payload:key1]" config-ref="myConfig"/>
+<!-- END_INCLUDE(bridgetable:contains-key2) -->
+
+<!-- BEGIN_INCLUDE(bridgetable:keys1) -->
+    <bridgetable:keys1 config-ref="myConfig"/>
+<!-- END_INCLUDE(bridgetable:keys1) -->
+
+<!-- BEGIN_INCLUDE(bridgetable:keys2) -->
+    <bridgetable:keys2 config-ref="myConfig"/>
+<!-- END_INCLUDE(bridgetable:keys2) -->
