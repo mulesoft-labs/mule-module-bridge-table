@@ -53,7 +53,7 @@ public class DataSourceBridgeTable implements BridgeTable
         {
             int result = executeUpdate(dialect.getInsertSQL(getTableName()), new Object[] {key1, key2});
             
-            LOGGER.info("Inserted " + result + "row/s for key1 = [" + key1 + "] and key2 = [" + key2 + "] in " + getTableName() + ".");
+            LOGGER.info(result + " row/s were inserted for key1 = [" + key1 + "] and key2 = [" + key2 + "] in " + getTableName() + ".");
         }
         catch(SQLException ex)
         {
