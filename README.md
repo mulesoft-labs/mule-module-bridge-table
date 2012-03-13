@@ -1,38 +1,14 @@
+Mule Bridge Table Module
+========================
 
-WELCOME
-=======
-Congratulations you have just created a new Mule Cloud Connector!
+This connector offers the functionality of a <b>bridge table</b> (a.k.a. junction table, cross-reference table, join table, map table, intersection table, linking table, many-to-many resolver, link table, pairing table, pivot table, look-up table, or association table) to offer mapping of two values (keys)
+ 
+Installation and Usage
+----------------------
 
-This wizard created a number of new classes and resources useful for Mule
-modules.  Each of the created files contains documentation and TODO
-items where necessary.  Here is an overview of what was created.
+For information about usage and installation you can check our documentation at http://mulesoft.github.com/mule-module-bridge-table
 
-./pom.xml:
-A maven project descriptor that describes how to build this module.
+Reporting Issues
+----------------
 
-./LICENSE.md:
-The open source license text for this project.
-
-TESTING
-=======
-
-This  project also contains test classes that can be run as part of a test
-suite.
-
-ADDITIONAL RESOURCES
-====================
-Everything you need to know about getting started with Mule can be found here:
-http://www.mulesoft.org/documentation/display/MULE3INTRO/Home
-
-There further useful information about extending Mule here:
-http://www.mulesoft.org/documentation/display/DEVKIT/Home
-
-Remember if you get stuck you can try getting help on the Mule user list:
-http://www.mulesoft.org/email-lists
-
-Also, MuleSoft, the company behind Mule, offers 24x7 support options:
-http://www.mulesoft.com/enterprise-subscriptions-and-support
-
-Enjoy your Mule ride!
-
-The Mule Team
+We use GitHub:Issues for tracking issues with this connector. You can report new issues at this link https://github.com/mulesoft/mule-module-bridge-table/issues.

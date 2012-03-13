@@ -35,6 +35,7 @@ Thumbs.db
 
 # IDE and MVN # 
 ###############
+bin
 target
 .classpath
 .project
