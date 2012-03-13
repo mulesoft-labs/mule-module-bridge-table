@@ -1,0 +1,6 @@
+org.mule.module
+org.mule.module.bridgetable
+org.mule.module.bridgetable.dialect
+org.mule.module.config
+org.mule.module.config.spring
+
