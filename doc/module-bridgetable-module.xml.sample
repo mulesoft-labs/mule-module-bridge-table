@@ -1,3 +1,7 @@
+<!-- BEGIN_INCLUDE(bridgetable:config1) -->
+    <bridgetable:config />
+<!-- END_INCLUDE(bridgetable:config1) -->
+
 <!-- BEGIN_INCLUDE(bridgetable:insert) -->
     <bridgetable:insert key1="#[map-payload:key1]" key2="#[map-payload:key2]" config-ref="myConfig"/>
 <!-- END_INCLUDE(bridgetable:insert) -->

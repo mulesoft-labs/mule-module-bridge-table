@@ -6,11 +6,11 @@
     <artifactId>mule-module-bridge-table</artifactId>
     <version>1.0-SNAPSHOT</version>
     <packaging>mule-module</packaging>
-    <name>Mule Cloud Connector</name>
+    <name>Mule Bridge Table Module</name>
 
     <properties>
         <mule.version>3.2.1</mule.version>
-        <mule.devkit.version>3.2</mule.devkit.version>
+        <mule.devkit.version>3.3-SNAPSHOT</mule.devkit.version>
         <junit.version>4.8.2</junit.version>
         <mockito.version>1.8.2</mockito.version>
     </properties>
@@ -111,7 +111,7 @@
                     <docletArtifact>
                         <groupId>org.mule.tools.devkit</groupId>
                         <artifactId>mule-devkit-doclet</artifactId>
-                        <version>3.1.1-SNAPSHOT</version>
+                        <version>3.3-SNAPSHOT</version>
                     </docletArtifact>
                     <doclet>org.mule.devkit.doclet.Doclava</doclet>
                     <bootclasspath>${sun.boot.class.path}</bootclasspath>
@@ -203,6 +203,15 @@
         </dependency>
     </dependencies>
 
+    <scm>
+        <connection>scm:git:git://github.com:mulesoft/mule-module-bridge-table.git
+        </connection>
+        <developerConnection>
+            scm:git:git@github.com:mulesoft/mule-module-bridge-table.git
+        </developerConnection>
+        <url>http://github.com/mulesoft/mule-module-bridge-table</url>
+    </scm>
+    
     <repositories>
         <repository>
             <id>mulesoft-releases</id>

@@ -45,7 +45,7 @@ import org.mule.module.bridgetable.Type;
  * <p>
  * This connector offers the functionality of a <b>bridge table</b> (a.k.a. junction table, cross-reference table, join table,
  * map table, intersection table, linking table, many-to-many resolver, link table, pairing table, pivot table,
- * look-up table, or association table) to offer mapping of two values (keys)
+ * look-up table, or association table) to offer mapping of two values (keys).
  * </p>
  * <p>
  * Basically it supports inserting two keys (key1 and key2) and perform direct and reverse lookups:
@@ -61,6 +61,9 @@ import org.mule.module.bridgetable.Type;
  * <p>
  * The module exposes opertations to insert, update, delete and list keys too.
  * </p>
+ * 
+ * {@sample.config ../../../doc/module-bridgetable-module.xml.sample bridgetable:config1}
+ * 
  * @author MuleSoft, Inc.
  */
 @Module(name="bridgetable", schemaVersion="1.0-SNAPSHOT")
