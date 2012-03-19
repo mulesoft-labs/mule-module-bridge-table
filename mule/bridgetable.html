@@ -64,11 +64,13 @@
 
 
 
+
+
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 
-  <meta name="description" content="Documentation for Mule Cloud Connector." />
+  <meta name="description" content="Documentation for Mule Bridge Table Module." />
 
 <link rel="shortcut icon" type="image/x-icon" href="../favicon.ico" />
 <title>
@@ -76,7 +78,7 @@
   BridgeTableModule
 
 
-| Mule Cloud Connector
+| Mule Bridge Table Module
 
 </title>
 <link href="../assets/mule-developer-docs.css" rel="stylesheet" type="text/css" />
@@ -85,6 +87,7 @@
 <link href='http://fonts.googleapis.com/css?family=Ubuntu:300' rel='stylesheet' type='text/css'>
 <script src="../assets/search_autocomplete.js" type="text/javascript"></script>
 <script src="../assets/jquery-resizable.min.js" type="text/javascript"></script>
+<script src="../assets/jquery-toc.js" type="text/javascript"></script>
 <script src="../assets/mule-developer-docs.js" type="text/javascript"></script>
 <script src="../assets/prettify.js" type="text/javascript"></script>
 <script type="text/javascript">
@@ -101,6 +104,27 @@
     #resize-packages-nav{border-bottom:3px solid #666;}
   </style>
 </noscript>
+<script type="text/javascript" charset="utf-8">
+  var is_ssl = ("https:" == document.location.protocol);
+  var asset_host = is_ssl ? "https://s3.amazonaws.com/getsatisfaction.com/" : "http://s3.amazonaws.com/getsatisfaction.com/";
+  document.write(unescape("%3Cscript src='" + asset_host + "javascripts/feedback-v2.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+
+<script type="text/javascript" charset="utf-8">
+  var feedback_widget_options = {};
+
+  feedback_widget_options.display = "overlay";
+  feedback_widget_options.company = "mulesoft";
+  feedback_widget_options.placement = "right";
+  feedback_widget_options.color = "#2F74AE";
+  feedback_widget_options.style = "question";
+
+  feedback_widget_options.tag = "Mule Bridge Table Module";
+
+  feedback_widget_options.limit = "3";
+
+  var feedback_widget = new GSFN.feedback_widget(feedback_widget_options);
+</script>
 </head>
 
 <body class="">
@@ -108,7 +132,7 @@
 <div id="header">
     <div id="headerLeft">
     
-      <span id="masthead-title">Mule Cloud Connector</span>
+      <span id="masthead-title">Mule Bridge Table Module</span>
     
     <ul id="header-tabs" class="mule">
     
@@ -196,7 +220,6 @@ Summary:
 <div id="jd-header">
     org.mule.module
 <h1>mule-module-bridge-table</h1>
-    1.0-SNAPSHOT
 
 </div><!-- end header -->
 
@@ -205,15 +228,17 @@ Summary:
 <div id="jd-content" class="api apilevel-">
 
 
+<br/>
+
 <div class="jd-tagdata">
       <table class="jd-tagtable">
         <tbody><tr>
           <th>Namespace</th><td>http://www.mulesoft.org/schema/mule/bridgetable</td>
         </tr><tr>
-          <th>Schema Location</th><td>http://www.mulesoft.org/schema/mule/bridgetable/1.0-SNAPSHOT/mule-bridgetable.xsd</td>
+          <th>Schema Location</th><td>http://www.mulesoft.org/schema/mule/bridgetable/current/mule-bridgetable.xsd&nbsp;&nbsp;(<a href="bridgetable-schema.html">View Schema</a>)</td>
         </tr>
 <tr>
-          <th>Version</th><td>1.0-SNAPSHOT</td>
+          <th>Schema Version</th><td>1.0-SNAPSHOT</td>
         </tr>
 <tr>
           <th>Minimum Mule Version</th><td>3.2</td>
@@ -228,7 +253,7 @@ Summary:
 <p><p>
  This connector offers the functionality of a <b>bridge table</b> (a.k.a. junction table, cross-reference table, join table,
  map table, intersection table, linking table, many-to-many resolver, link table, pairing table, pivot table,
- look-up table, or association table) to offer mapping of two values (keys)
+ look-up table, or association table) to offer mapping of two values (keys).
  </p>
  <p>
  Basically it supports inserting two keys (key1 and key2) and perform direct and reverse lookups:
@@ -243,7 +268,9 @@ Summary:
  </p>
  <p>
  The module exposes opertations to insert, update, delete and list keys too.
- </p></p>
+ </p>
+ 
+ {@sample.config INCLUDE_ERROR}</p>
 
 
 </div><!-- jd-descr -->
@@ -291,7 +318,7 @@ Summary:
         
         <div class="jd-descrdiv">Checks whether key1 exists in the bridge table
  <p/>
- <br/></div>
+ </div>
         
   </td></tr>
 
@@ -303,7 +330,7 @@ Summary:
         
         <div class="jd-descrdiv">Checks whether key2 exists in the bridge table
  <p/>
- <br/></div>
+ </div>
         
   </td></tr>
 
@@ -313,7 +340,7 @@ Summary:
         <td class="jd-linkcol" width="100%"><nobr>
         <span class="sympad"><a href="../mule/bridgetable.html#insert">&lt;bridgetable:insert&gt;</a></nobr>
         
-        <div class="jd-descrdiv">Insert the mapping: key1 <=> key2.<br/></div>
+        <div class="jd-descrdiv">Insert the mapping: key1 <=> key2.</div>
         
   </td></tr>
 
@@ -325,7 +352,7 @@ Summary:
         
         <div class="jd-descrdiv">Returns all the values for key1
  <p/>
- <br/></div>
+ </div>
         
   </td></tr>
 
@@ -337,7 +364,7 @@ Summary:
         
         <div class="jd-descrdiv">Returns all the values for key2
  <p/>
- <br/></div>
+ </div>
         
   </td></tr>
 
@@ -349,7 +376,7 @@ Summary:
         
         <div class="jd-descrdiv">Remove the mapping: key1 <=> key2
  <p/>
- <br/></div>
+ </div>
         
   </td></tr>
 
@@ -361,7 +388,7 @@ Summary:
         
         <div class="jd-descrdiv">Remove the mapping: key2 <=> key1
  <p/>
- <br/></div>
+ </div>
         
   </td></tr>
 
@@ -371,7 +398,7 @@ Summary:
         <td class="jd-linkcol" width="100%"><nobr>
         <span class="sympad"><a href="../mule/bridgetable.html#retrieve-by-key1">&lt;bridgetable:retrieve-by-key1&gt;</a></nobr>
         
-        <div class="jd-descrdiv">Retrieves the value of key2 associated with key1.<br/></div>
+        <div class="jd-descrdiv">Retrieves the value of key2 associated with key1.</div>
         
   </td></tr>
 
@@ -381,7 +408,7 @@ Summary:
         <td class="jd-linkcol" width="100%"><nobr>
         <span class="sympad"><a href="../mule/bridgetable.html#retrieve-by-key2">&lt;bridgetable:retrieve-by-key2&gt;</a></nobr>
         
-        <div class="jd-descrdiv">Retrieves the value of key1 associated with key2.<br/></div>
+        <div class="jd-descrdiv">Retrieves the value of key1 associated with key2.</div>
         
   </td></tr>
 
@@ -393,7 +420,7 @@ Summary:
         
         <div class="jd-descrdiv">Update the mapping: key1 <=> key2
  <p/>
- <br/></div>
+ </div>
         
   </td></tr>
 
@@ -405,7 +432,7 @@ Summary:
         
         <div class="jd-descrdiv">Update the mapping: key2 <=> key1
  <p/>
- <br/></div>
+ </div>
         
   </td></tr>
 
@@ -415,7 +442,7 @@ Summary:
         <td class="jd-linkcol" width="100%"><nobr>
         <span class="sympad"><a href="../mule/bridgetable.html#upsert-by-key1">&lt;bridgetable:upsert-by-key1&gt;</a></nobr>
         
-        <div class="jd-descrdiv">Update or insert the mapping: key1 <=> key2.<br/></div>
+        <div class="jd-descrdiv">Update or insert the mapping: key1 <=> key2.</div>
         
   </td></tr>
 
@@ -425,7 +452,7 @@ Summary:
         <td class="jd-linkcol" width="100%"><nobr>
         <span class="sympad"><a href="../mule/bridgetable.html#upsert-by-key2">&lt;bridgetable:upsert-by-key2&gt;</a></nobr>
         
-        <div class="jd-descrdiv">Update or insert the mapping: key2 <=> key1.<br/></div>
+        <div class="jd-descrdiv">Update or insert the mapping: key2 <=> key1.</div>
         
   </td></tr>
 
@@ -443,7 +470,6 @@ Summary:
 </div><!-- jd-descr (summary) -->
 
 
-
 <!-- ========= CONFIGURATION DETAIL ======== -->
 <A NAME="config"></A>
 <h2>Configuration</h2>
@@ -457,14 +483,15 @@ similar to the following:</p>
                http://www.mulesoft.org/schema/mule/core
                http://www.mulesoft.org/schema/mule/core/current/mule.xsd
                http://www.mulesoft.org/schema/mule/bridgetable
-               http://www.mulesoft.org/schema/mule/bridgetable/1.0-SNAPSHOT/mule-bridgetable.xsd"&gt;
+               http://www.mulesoft.org/schema/mule/bridgetable/current/mule-bridgetable.xsd"&gt;
 
       &lt;!-- here goes your flows and configuration elements --&gt;
 
 &lt;/mule&gt;
 </pre>
+
 <p>This module is configured using the <i>config</i> element. This element must be placed outside of your flows and at
-the root of your Mule application. You can create as many configurations as you deem necesary as long as each carries
+the root of your Mule application. You can create as many configurations as you deem necessary as long as each carries
 its own name.</p>
 <p>Each message processor, message source or transformer carries a <i>config-ref</i> attribute that allows the invoker to
 specify which configuration to use.</p>
@@ -569,6 +596,8 @@ specify which configuration to use.</p>
       
     
 </table>
+<div class="jd-tagdata"><h5 class="jd-tagtitle">Configuration Sample</h5><pre>INCLUDE_ERROR</pre></div>
+    
 
 
 
@@ -642,10 +671,12 @@ specify which configuration to use.</p>
     
   
   <div class="jd-tagdata">
-      <h5 class="jd-tagtitle">Exception Payload</h5>
-      <table class="jd-tagtable">
+      <h5 class="jd-tagtitle">Exception Payloads</h5>
+      <table class="jd-sumtable">
+        <tr><th>Payload Class</th><th>Description</th></tr>
+        
         <tr>
-            <th><a href="http://download.oracle.com/javase/6/docs/api/index.html?java/lang/Exception.html">Exception</a></td>
+            <td><a href="http://download.oracle.com/javase/6/docs/api/index.html?java/lang/Exception.html">Exception</a></td>
             <td>In case of error
 </td>
         </tr>
@@ -713,10 +744,12 @@ specify which configuration to use.</p>
     
   
   <div class="jd-tagdata">
-      <h5 class="jd-tagtitle">Exception Payload</h5>
-      <table class="jd-tagtable">
+      <h5 class="jd-tagtitle">Exception Payloads</h5>
+      <table class="jd-sumtable">
+        <tr><th>Payload Class</th><th>Description</th></tr>
+        
         <tr>
-            <th><a href="http://download.oracle.com/javase/6/docs/api/index.html?java/lang/Exception.html">Exception</a></td>
+            <td><a href="http://download.oracle.com/javase/6/docs/api/index.html?java/lang/Exception.html">Exception</a></td>
             <td>In case of error
 </td>
         </tr>
@@ -791,14 +824,16 @@ specify which configuration to use.</p>
     
   
   <div class="jd-tagdata">
-      <h5 class="jd-tagtitle">Exception Payload</h5>
-      <table class="jd-tagtable">
+      <h5 class="jd-tagtitle">Exception Payloads</h5>
+      <table class="jd-sumtable">
+        <tr><th>Payload Class</th><th>Description</th></tr>
+        
         <tr>
-            <th></td>
+            <td></td>
             <td>If key1 or key2 already existed in the bridge table.</td>
         </tr>
         <tr>
-            <th><a href="http://download.oracle.com/javase/6/docs/api/index.html?java/lang/Exception.html">Exception</a></td>
+            <td><a href="http://download.oracle.com/javase/6/docs/api/index.html?java/lang/Exception.html">Exception</a></td>
             <td>In case of any other error
 </td>
         </tr>
@@ -855,10 +890,12 @@ specify which configuration to use.</p>
     
   
   <div class="jd-tagdata">
-      <h5 class="jd-tagtitle">Exception Payload</h5>
-      <table class="jd-tagtable">
+      <h5 class="jd-tagtitle">Exception Payloads</h5>
+      <table class="jd-sumtable">
+        <tr><th>Payload Class</th><th>Description</th></tr>
+        
         <tr>
-            <th><a href="http://download.oracle.com/javase/6/docs/api/index.html?java/lang/Exception.html">Exception</a></td>
+            <td><a href="http://download.oracle.com/javase/6/docs/api/index.html?java/lang/Exception.html">Exception</a></td>
             <td>In case of error
 </td>
         </tr>
@@ -915,10 +952,12 @@ specify which configuration to use.</p>
     
   
   <div class="jd-tagdata">
-      <h5 class="jd-tagtitle">Exception Payload</h5>
-      <table class="jd-tagtable">
+      <h5 class="jd-tagtitle">Exception Payloads</h5>
+      <table class="jd-sumtable">
+        <tr><th>Payload Class</th><th>Description</th></tr>
+        
         <tr>
-            <th><a href="http://download.oracle.com/javase/6/docs/api/index.html?java/lang/Exception.html">Exception</a></td>
+            <td><a href="http://download.oracle.com/javase/6/docs/api/index.html?java/lang/Exception.html">Exception</a></td>
             <td>In case of error
 </td>
         </tr>
@@ -982,14 +1021,16 @@ specify which configuration to use.</p>
     
   
   <div class="jd-tagdata">
-      <h5 class="jd-tagtitle">Exception Payload</h5>
-      <table class="jd-tagtable">
+      <h5 class="jd-tagtitle">Exception Payloads</h5>
+      <table class="jd-sumtable">
+        <tr><th>Payload Class</th><th>Description</th></tr>
+        
         <tr>
-            <th><a href="../java/org/mule/module/bridgetable/KeyDoesNotExistException.html">KeyDoesNotExistException</a></td>
+            <td><a href="../java/org/mule/module/bridgetable/KeyDoesNotExistException.html">KeyDoesNotExistException</a></td>
             <td>If key1 is not present in the bridge table</td>
         </tr>
         <tr>
-            <th><a href="http://download.oracle.com/javase/6/docs/api/index.html?java/lang/Exception.html">Exception</a></td>
+            <td><a href="http://download.oracle.com/javase/6/docs/api/index.html?java/lang/Exception.html">Exception</a></td>
             <td>In case of any other error
 </td>
         </tr>
@@ -1053,14 +1094,16 @@ specify which configuration to use.</p>
     
   
   <div class="jd-tagdata">
-      <h5 class="jd-tagtitle">Exception Payload</h5>
-      <table class="jd-tagtable">
+      <h5 class="jd-tagtitle">Exception Payloads</h5>
+      <table class="jd-sumtable">
+        <tr><th>Payload Class</th><th>Description</th></tr>
+        
         <tr>
-            <th><a href="../java/org/mule/module/bridgetable/KeyDoesNotExistException.html">KeyDoesNotExistException</a></td>
+            <td><a href="../java/org/mule/module/bridgetable/KeyDoesNotExistException.html">KeyDoesNotExistException</a></td>
             <td>If key2 is not present in the bridge table</td>
         </tr>
         <tr>
-            <th><a href="http://download.oracle.com/javase/6/docs/api/index.html?java/lang/Exception.html">Exception</a></td>
+            <td><a href="http://download.oracle.com/javase/6/docs/api/index.html?java/lang/Exception.html">Exception</a></td>
             <td>In case of any other error
 </td>
         </tr>
@@ -1128,14 +1171,16 @@ specify which configuration to use.</p>
     
   
   <div class="jd-tagdata">
-      <h5 class="jd-tagtitle">Exception Payload</h5>
-      <table class="jd-tagtable">
+      <h5 class="jd-tagtitle">Exception Payloads</h5>
+      <table class="jd-sumtable">
+        <tr><th>Payload Class</th><th>Description</th></tr>
+        
         <tr>
-            <th><a href="../java/org/mule/module/bridgetable/KeyDoesNotExistException.html">KeyDoesNotExistException</a></td>
+            <td><a href="../java/org/mule/module/bridgetable/KeyDoesNotExistException.html">KeyDoesNotExistException</a></td>
             <td>If key1 is not present in the bridge table</td>
         </tr>
         <tr>
-            <th><a href="http://download.oracle.com/javase/6/docs/api/index.html?java/lang/Exception.html">Exception</a></td>
+            <td><a href="http://download.oracle.com/javase/6/docs/api/index.html?java/lang/Exception.html">Exception</a></td>
             <td>In case of any other error
 </td>
         </tr>
@@ -1203,14 +1248,16 @@ specify which configuration to use.</p>
     
   
   <div class="jd-tagdata">
-      <h5 class="jd-tagtitle">Exception Payload</h5>
-      <table class="jd-tagtable">
+      <h5 class="jd-tagtitle">Exception Payloads</h5>
+      <table class="jd-sumtable">
+        <tr><th>Payload Class</th><th>Description</th></tr>
+        
         <tr>
-            <th><a href="../java/org/mule/module/bridgetable/KeyDoesNotExistException.html">KeyDoesNotExistException</a></td>
+            <td><a href="../java/org/mule/module/bridgetable/KeyDoesNotExistException.html">KeyDoesNotExistException</a></td>
             <td>If key2 is not present in the bridge table</td>
         </tr>
         <tr>
-            <th><a href="http://download.oracle.com/javase/6/docs/api/index.html?java/lang/Exception.html">Exception</a></td>
+            <td><a href="http://download.oracle.com/javase/6/docs/api/index.html?java/lang/Exception.html">Exception</a></td>
             <td>In case of any other error
 </td>
         </tr>
@@ -1285,14 +1332,16 @@ specify which configuration to use.</p>
     
   
   <div class="jd-tagdata">
-      <h5 class="jd-tagtitle">Exception Payload</h5>
-      <table class="jd-tagtable">
+      <h5 class="jd-tagtitle">Exception Payloads</h5>
+      <table class="jd-sumtable">
+        <tr><th>Payload Class</th><th>Description</th></tr>
+        
         <tr>
-            <th><a href="../java/org/mule/module/bridgetable/KeyDoesNotExistException.html">KeyDoesNotExistException</a></td>
+            <td><a href="../java/org/mule/module/bridgetable/KeyDoesNotExistException.html">KeyDoesNotExistException</a></td>
             <td>If key1 is not present in the bridge table</td>
         </tr>
         <tr>
-            <th><a href="http://download.oracle.com/javase/6/docs/api/index.html?java/lang/Exception.html">Exception</a></td>
+            <td><a href="http://download.oracle.com/javase/6/docs/api/index.html?java/lang/Exception.html">Exception</a></td>
             <td>In case of any other error
 </td>
         </tr>
@@ -1367,14 +1416,16 @@ specify which configuration to use.</p>
     
   
   <div class="jd-tagdata">
-      <h5 class="jd-tagtitle">Exception Payload</h5>
-      <table class="jd-tagtable">
+      <h5 class="jd-tagtitle">Exception Payloads</h5>
+      <table class="jd-sumtable">
+        <tr><th>Payload Class</th><th>Description</th></tr>
+        
         <tr>
-            <th><a href="../java/org/mule/module/bridgetable/KeyDoesNotExistException.html">KeyDoesNotExistException</a></td>
+            <td><a href="../java/org/mule/module/bridgetable/KeyDoesNotExistException.html">KeyDoesNotExistException</a></td>
             <td>If key2 is not present in the bridge table</td>
         </tr>
         <tr>
-            <th><a href="http://download.oracle.com/javase/6/docs/api/index.html?java/lang/Exception.html">Exception</a></td>
+            <td><a href="http://download.oracle.com/javase/6/docs/api/index.html?java/lang/Exception.html">Exception</a></td>
             <td>In case of any other error
 </td>
         </tr>
@@ -1451,14 +1502,16 @@ specify which configuration to use.</p>
     
   
   <div class="jd-tagdata">
-      <h5 class="jd-tagtitle">Exception Payload</h5>
-      <table class="jd-tagtable">
+      <h5 class="jd-tagtitle">Exception Payloads</h5>
+      <table class="jd-sumtable">
+        <tr><th>Payload Class</th><th>Description</th></tr>
+        
         <tr>
-            <th></td>
+            <td></td>
             <td>If the value for key2 already existed in the bridge table when attempting the insert.</td>
         </tr>
         <tr>
-            <th><a href="http://download.oracle.com/javase/6/docs/api/index.html?java/lang/Exception.html">Exception</a></td>
+            <td><a href="http://download.oracle.com/javase/6/docs/api/index.html?java/lang/Exception.html">Exception</a></td>
             <td>In case of any other error
 </td>
         </tr>
@@ -1535,14 +1588,16 @@ specify which configuration to use.</p>
     
   
   <div class="jd-tagdata">
-      <h5 class="jd-tagtitle">Exception Payload</h5>
-      <table class="jd-tagtable">
+      <h5 class="jd-tagtitle">Exception Payloads</h5>
+      <table class="jd-sumtable">
+        <tr><th>Payload Class</th><th>Description</th></tr>
+        
         <tr>
-            <th></td>
+            <td></td>
             <td>If the value for key1 already existed in the bridge table when attempting the insert.</td>
         </tr>
         <tr>
-            <th><a href="http://download.oracle.com/javase/6/docs/api/index.html?java/lang/Exception.html">Exception</a></td>
+            <td><a href="http://download.oracle.com/javase/6/docs/api/index.html?java/lang/Exception.html">Exception</a></td>
             <td>In case of any other error
 </td>
         </tr>

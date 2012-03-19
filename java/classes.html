@@ -64,11 +64,13 @@
 
 
 
+
+
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 
-  <meta name="description" content="Documentation for Mule Cloud Connector." />
+  <meta name="description" content="Documentation for Mule Bridge Table Module." />
 
 <link rel="shortcut icon" type="image/x-icon" href="../favicon.ico" />
 <title>
@@ -76,7 +78,7 @@
   Class Index
 
 
-| Mule Cloud Connector
+| Mule Bridge Table Module
 
 </title>
 <link href="../assets/mule-developer-docs.css" rel="stylesheet" type="text/css" />
@@ -85,6 +87,7 @@
 <link href='http://fonts.googleapis.com/css?family=Ubuntu:300' rel='stylesheet' type='text/css'>
 <script src="../assets/search_autocomplete.js" type="text/javascript"></script>
 <script src="../assets/jquery-resizable.min.js" type="text/javascript"></script>
+<script src="../assets/jquery-toc.js" type="text/javascript"></script>
 <script src="../assets/mule-developer-docs.js" type="text/javascript"></script>
 <script src="../assets/prettify.js" type="text/javascript"></script>
 <script type="text/javascript">
@@ -103,13 +106,34 @@
     #resize-packages-nav{border-bottom:3px solid #666;}
   </style>
 </noscript>
+<script type="text/javascript" charset="utf-8">
+  var is_ssl = ("https:" == document.location.protocol);
+  var asset_host = is_ssl ? "https://s3.amazonaws.com/getsatisfaction.com/" : "http://s3.amazonaws.com/getsatisfaction.com/";
+  document.write(unescape("%3Cscript src='" + asset_host + "javascripts/feedback-v2.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+
+<script type="text/javascript" charset="utf-8">
+  var feedback_widget_options = {};
+
+  feedback_widget_options.display = "overlay";
+  feedback_widget_options.company = "mulesoft";
+  feedback_widget_options.placement = "right";
+  feedback_widget_options.color = "#2F74AE";
+  feedback_widget_options.style = "question";
+
+  feedback_widget_options.tag = "Mule Bridge Table Module";
+
+  feedback_widget_options.limit = "3";
+
+  var feedback_widget = new GSFN.feedback_widget(feedback_widget_options);
+</script>
 </head>
 
 
 <div id="header">
     <div id="headerLeft">
     
-      <span id="masthead-title">Mule Cloud Connector</span>
+      <span id="masthead-title">Mule Bridge Table Module</span>
     
     <ul id="header-tabs" class="java">
     
@@ -181,13 +205,17 @@
     <li class="api apilevel-">
   <a href="../java/org/mule/module/package-summary.html">org.mule.module</a></li>
     <li class="api apilevel-">
+  <a href="../java/org/mule/module/adapters/package-summary.html">org.mule.module.adapters</a></li>
+    <li class="api apilevel-">
   <a href="../java/org/mule/module/bridgetable/package-summary.html">org.mule.module.bridgetable</a></li>
     <li class="api apilevel-">
   <a href="../java/org/mule/module/bridgetable/dialect/package-summary.html">org.mule.module.bridgetable.dialect</a></li>
     <li class="api apilevel-">
   <a href="../java/org/mule/module/config/package-summary.html">org.mule.module.config</a></li>
     <li class="api apilevel-">
-  <a href="../java/org/mule/module/config/spring/package-summary.html">org.mule.module.config.spring</a></li>
+  <a href="../java/org/mule/module/processors/package-summary.html">org.mule.module.processors</a></li>
+    <li class="api apilevel-">
+  <a href="../java/org/mule/module/transformers/package-summary.html">org.mule.module.transformers</a></li>
               </ul><br/>
             </div> <!-- end packages -->
           </div> <!-- end resize-packages -->
@@ -278,25 +306,25 @@
     
     
         <tr class="alt-color api apilevel-" >
-            <td class="jd-linkcol"><a href="../java/org/mule/module/config/BridgeTableModuleCapabilitiesAdapter.html">BridgeTableModuleCapabilitiesAdapter</a></td>
+            <td class="jd-linkcol"><a href="../java/org/mule/module/adapters/BridgeTableModuleCapabilitiesAdapter.html">BridgeTableModuleCapabilitiesAdapter</a></td>
             <td class="jd-descrcol" width="100%">A <code>BridgeTableModuleCapabilitiesAdapter</code> is a wrapper around <code><a href="../java/org/mule/module/BridgeTableModule.html">BridgeTableModule</a></code> that implements org.mule.api.Capabilities interface.&nbsp;</td>
         </tr>
     
     
         <tr class=" api apilevel-" >
-            <td class="jd-linkcol"><a href="../java/org/mule/module/config/spring/BridgeTableModuleConfigDefinitionParser.html">BridgeTableModuleConfigDefinitionParser</a></td>
+            <td class="jd-linkcol"><a href="../java/org/mule/module/config/BridgeTableModuleConfigDefinitionParser.html">BridgeTableModuleConfigDefinitionParser</a></td>
             <td class="jd-descrcol" width="100%">&nbsp;</td>
         </tr>
     
     
         <tr class="alt-color api apilevel-" >
-            <td class="jd-linkcol"><a href="../java/org/mule/module/config/BridgeTableModuleLifecycleAdapter.html">BridgeTableModuleLifecycleAdapter</a></td>
+            <td class="jd-linkcol"><a href="../java/org/mule/module/adapters/BridgeTableModuleLifecycleAdapter.html">BridgeTableModuleLifecycleAdapter</a></td>
             <td class="jd-descrcol" width="100%">A <code>BridgeTableModuleLifecycleAdapter</code> is a wrapper around <code><a href="../java/org/mule/module/BridgeTableModule.html">BridgeTableModule</a></code> that adds lifecycle methods to the pojo.&nbsp;</td>
         </tr>
     
     
         <tr class=" api apilevel-" >
-            <td class="jd-linkcol"><a href="../java/org/mule/module/config/spring/BridgeTableModuleNamespaceHandler.html">BridgeTableModuleNamespaceHandler</a></td>
+            <td class="jd-linkcol"><a href="../java/org/mule/module/config/BridgeTableModuleNamespaceHandler.html">BridgeTableModuleNamespaceHandler</a></td>
             <td class="jd-descrcol" width="100%">Registers bean definitions parsers for handling elements in <code>http://www.mulesoft.org/schema/mule/bridgetable</code>.&nbsp;</td>
         </tr>
     
@@ -309,25 +337,25 @@
     
     
         <tr class="alt-color api apilevel-" >
-            <td class="jd-linkcol"><a href="../java/org/mule/module/config/spring/ContainsKey1DefinitionParser.html">ContainsKey1DefinitionParser</a></td>
+            <td class="jd-linkcol"><a href="../java/org/mule/module/config/ContainsKey1DefinitionParser.html">ContainsKey1DefinitionParser</a></td>
             <td class="jd-descrcol" width="100%">&nbsp;</td>
         </tr>
     
     
         <tr class=" api apilevel-" >
-            <td class="jd-linkcol"><a href="../java/org/mule/module/config/ContainsKey1MessageProcessor.html">ContainsKey1MessageProcessor</a></td>
+            <td class="jd-linkcol"><a href="../java/org/mule/module/processors/ContainsKey1MessageProcessor.html">ContainsKey1MessageProcessor</a></td>
             <td class="jd-descrcol" width="100%">ContainsKey1MessageProcessor invokes the <code><a href="../java/org/mule/module/BridgeTableModule.html#containsKey1(java.lang.String)">containsKey1(java.lang.String)</a></code> method in <code><a href="../java/org/mule/module/BridgeTableModule.html">BridgeTableModule</a></code>.&nbsp;</td>
         </tr>
     
     
         <tr class="alt-color api apilevel-" >
-            <td class="jd-linkcol"><a href="../java/org/mule/module/config/spring/ContainsKey2DefinitionParser.html">ContainsKey2DefinitionParser</a></td>
+            <td class="jd-linkcol"><a href="../java/org/mule/module/config/ContainsKey2DefinitionParser.html">ContainsKey2DefinitionParser</a></td>
             <td class="jd-descrcol" width="100%">&nbsp;</td>
         </tr>
     
     
         <tr class=" api apilevel-" >
-            <td class="jd-linkcol"><a href="../java/org/mule/module/config/ContainsKey2MessageProcessor.html">ContainsKey2MessageProcessor</a></td>
+            <td class="jd-linkcol"><a href="../java/org/mule/module/processors/ContainsKey2MessageProcessor.html">ContainsKey2MessageProcessor</a></td>
             <td class="jd-descrcol" width="100%">ContainsKey2MessageProcessor invokes the <code><a href="../java/org/mule/module/BridgeTableModule.html#containsKey2(java.lang.String)">containsKey2(java.lang.String)</a></code> method in <code><a href="../java/org/mule/module/BridgeTableModule.html">BridgeTableModule</a></code>.&nbsp;</td>
         </tr>
     
@@ -371,13 +399,13 @@
     
     
         <tr class=" api apilevel-" >
-            <td class="jd-linkcol"><a href="../java/org/mule/module/config/spring/InsertDefinitionParser.html">InsertDefinitionParser</a></td>
+            <td class="jd-linkcol"><a href="../java/org/mule/module/config/InsertDefinitionParser.html">InsertDefinitionParser</a></td>
             <td class="jd-descrcol" width="100%">&nbsp;</td>
         </tr>
     
     
         <tr class="alt-color api apilevel-" >
-            <td class="jd-linkcol"><a href="../java/org/mule/module/config/InsertMessageProcessor.html">InsertMessageProcessor</a></td>
+            <td class="jd-linkcol"><a href="../java/org/mule/module/processors/InsertMessageProcessor.html">InsertMessageProcessor</a></td>
             <td class="jd-descrcol" width="100%">InsertMessageProcessor invokes the <code><a href="../java/org/mule/module/BridgeTableModule.html#insert(java.lang.String, java.lang.String)">insert(java.lang.String, java.lang.String)</a></code> method in <code><a href="../java/org/mule/module/BridgeTableModule.html">BridgeTableModule</a></code>.&nbsp;</td>
         </tr>
     
@@ -402,25 +430,25 @@
     
     
         <tr class="alt-color api apilevel-" >
-            <td class="jd-linkcol"><a href="../java/org/mule/module/config/spring/Keys1DefinitionParser.html">Keys1DefinitionParser</a></td>
+            <td class="jd-linkcol"><a href="../java/org/mule/module/config/Keys1DefinitionParser.html">Keys1DefinitionParser</a></td>
             <td class="jd-descrcol" width="100%">&nbsp;</td>
         </tr>
     
     
         <tr class=" api apilevel-" >
-            <td class="jd-linkcol"><a href="../java/org/mule/module/config/Keys1MessageProcessor.html">Keys1MessageProcessor</a></td>
+            <td class="jd-linkcol"><a href="../java/org/mule/module/processors/Keys1MessageProcessor.html">Keys1MessageProcessor</a></td>
             <td class="jd-descrcol" width="100%">Keys1MessageProcessor invokes the <code><a href="../java/org/mule/module/BridgeTableModule.html#keys1()">keys1()</a></code> method in <code><a href="../java/org/mule/module/BridgeTableModule.html">BridgeTableModule</a></code>.&nbsp;</td>
         </tr>
     
     
         <tr class="alt-color api apilevel-" >
-            <td class="jd-linkcol"><a href="../java/org/mule/module/config/spring/Keys2DefinitionParser.html">Keys2DefinitionParser</a></td>
+            <td class="jd-linkcol"><a href="../java/org/mule/module/config/Keys2DefinitionParser.html">Keys2DefinitionParser</a></td>
             <td class="jd-descrcol" width="100%">&nbsp;</td>
         </tr>
     
     
         <tr class=" api apilevel-" >
-            <td class="jd-linkcol"><a href="../java/org/mule/module/config/Keys2MessageProcessor.html">Keys2MessageProcessor</a></td>
+            <td class="jd-linkcol"><a href="../java/org/mule/module/processors/Keys2MessageProcessor.html">Keys2MessageProcessor</a></td>
             <td class="jd-descrcol" width="100%">Keys2MessageProcessor invokes the <code><a href="../java/org/mule/module/BridgeTableModule.html#keys2()">keys2()</a></code> method in <code><a href="../java/org/mule/module/BridgeTableModule.html">BridgeTableModule</a></code>.&nbsp;</td>
         </tr>
     
@@ -432,7 +460,7 @@
     
     
         <tr class=" api apilevel-" >
-            <td class="jd-linkcol"><a href="../java/org/mule/module/config/KeyTypeEnumTransformer.html">KeyTypeEnumTransformer</a></td>
+            <td class="jd-linkcol"><a href="../java/org/mule/module/transformers/KeyTypeEnumTransformer.html">KeyTypeEnumTransformer</a></td>
             <td class="jd-descrcol" width="100%">&nbsp;</td>
         </tr>
     
@@ -458,49 +486,49 @@
     
     
         <tr class="alt-color api apilevel-" >
-            <td class="jd-linkcol"><a href="../java/org/mule/module/config/spring/RemoveByKey1DefinitionParser.html">RemoveByKey1DefinitionParser</a></td>
+            <td class="jd-linkcol"><a href="../java/org/mule/module/config/RemoveByKey1DefinitionParser.html">RemoveByKey1DefinitionParser</a></td>
             <td class="jd-descrcol" width="100%">&nbsp;</td>
         </tr>
     
     
         <tr class=" api apilevel-" >
-            <td class="jd-linkcol"><a href="../java/org/mule/module/config/RemoveByKey1MessageProcessor.html">RemoveByKey1MessageProcessor</a></td>
+            <td class="jd-linkcol"><a href="../java/org/mule/module/processors/RemoveByKey1MessageProcessor.html">RemoveByKey1MessageProcessor</a></td>
             <td class="jd-descrcol" width="100%">RemoveByKey1MessageProcessor invokes the <code><a href="../java/org/mule/module/BridgeTableModule.html#removeByKey1(java.lang.String)">removeByKey1(java.lang.String)</a></code> method in <code><a href="../java/org/mule/module/BridgeTableModule.html">BridgeTableModule</a></code>.&nbsp;</td>
         </tr>
     
     
         <tr class="alt-color api apilevel-" >
-            <td class="jd-linkcol"><a href="../java/org/mule/module/config/spring/RemoveByKey2DefinitionParser.html">RemoveByKey2DefinitionParser</a></td>
+            <td class="jd-linkcol"><a href="../java/org/mule/module/config/RemoveByKey2DefinitionParser.html">RemoveByKey2DefinitionParser</a></td>
             <td class="jd-descrcol" width="100%">&nbsp;</td>
         </tr>
     
     
         <tr class=" api apilevel-" >
-            <td class="jd-linkcol"><a href="../java/org/mule/module/config/RemoveByKey2MessageProcessor.html">RemoveByKey2MessageProcessor</a></td>
+            <td class="jd-linkcol"><a href="../java/org/mule/module/processors/RemoveByKey2MessageProcessor.html">RemoveByKey2MessageProcessor</a></td>
             <td class="jd-descrcol" width="100%">RemoveByKey2MessageProcessor invokes the <code><a href="../java/org/mule/module/BridgeTableModule.html#removeByKey2(java.lang.String)">removeByKey2(java.lang.String)</a></code> method in <code><a href="../java/org/mule/module/BridgeTableModule.html">BridgeTableModule</a></code>.&nbsp;</td>
         </tr>
     
     
         <tr class="alt-color api apilevel-" >
-            <td class="jd-linkcol"><a href="../java/org/mule/module/config/spring/RetrieveByKey1DefinitionParser.html">RetrieveByKey1DefinitionParser</a></td>
+            <td class="jd-linkcol"><a href="../java/org/mule/module/config/RetrieveByKey1DefinitionParser.html">RetrieveByKey1DefinitionParser</a></td>
             <td class="jd-descrcol" width="100%">&nbsp;</td>
         </tr>
     
     
         <tr class=" api apilevel-" >
-            <td class="jd-linkcol"><a href="../java/org/mule/module/config/RetrieveByKey1MessageProcessor.html">RetrieveByKey1MessageProcessor</a></td>
+            <td class="jd-linkcol"><a href="../java/org/mule/module/processors/RetrieveByKey1MessageProcessor.html">RetrieveByKey1MessageProcessor</a></td>
             <td class="jd-descrcol" width="100%">RetrieveByKey1MessageProcessor invokes the <code><a href="../java/org/mule/module/BridgeTableModule.html#retrieveByKey1(java.lang.String)">retrieveByKey1(java.lang.String)</a></code> method in <code><a href="../java/org/mule/module/BridgeTableModule.html">BridgeTableModule</a></code>.&nbsp;</td>
         </tr>
     
     
         <tr class="alt-color api apilevel-" >
-            <td class="jd-linkcol"><a href="../java/org/mule/module/config/spring/RetrieveByKey2DefinitionParser.html">RetrieveByKey2DefinitionParser</a></td>
+            <td class="jd-linkcol"><a href="../java/org/mule/module/config/RetrieveByKey2DefinitionParser.html">RetrieveByKey2DefinitionParser</a></td>
             <td class="jd-descrcol" width="100%">&nbsp;</td>
         </tr>
     
     
         <tr class=" api apilevel-" >
-            <td class="jd-linkcol"><a href="../java/org/mule/module/config/RetrieveByKey2MessageProcessor.html">RetrieveByKey2MessageProcessor</a></td>
+            <td class="jd-linkcol"><a href="../java/org/mule/module/processors/RetrieveByKey2MessageProcessor.html">RetrieveByKey2MessageProcessor</a></td>
             <td class="jd-descrcol" width="100%">RetrieveByKey2MessageProcessor invokes the <code><a href="../java/org/mule/module/BridgeTableModule.html#retrieveByKey2(java.lang.String)">retrieveByKey2(java.lang.String)</a></code> method in <code><a href="../java/org/mule/module/BridgeTableModule.html">BridgeTableModule</a></code>.&nbsp;</td>
         </tr>
     
@@ -519,7 +547,7 @@
     
     
         <tr class=" api apilevel-" >
-            <td class="jd-linkcol"><a href="../java/org/mule/module/config/TypeEnumTransformer.html">TypeEnumTransformer</a></td>
+            <td class="jd-linkcol"><a href="../java/org/mule/module/transformers/TypeEnumTransformer.html">TypeEnumTransformer</a></td>
             <td class="jd-descrcol" width="100%">&nbsp;</td>
         </tr>
     
@@ -532,49 +560,49 @@
     
     
         <tr class="alt-color api apilevel-" >
-            <td class="jd-linkcol"><a href="../java/org/mule/module/config/spring/UpdateByKey1DefinitionParser.html">UpdateByKey1DefinitionParser</a></td>
+            <td class="jd-linkcol"><a href="../java/org/mule/module/config/UpdateByKey1DefinitionParser.html">UpdateByKey1DefinitionParser</a></td>
             <td class="jd-descrcol" width="100%">&nbsp;</td>
         </tr>
     
     
         <tr class=" api apilevel-" >
-            <td class="jd-linkcol"><a href="../java/org/mule/module/config/UpdateByKey1MessageProcessor.html">UpdateByKey1MessageProcessor</a></td>
+            <td class="jd-linkcol"><a href="../java/org/mule/module/processors/UpdateByKey1MessageProcessor.html">UpdateByKey1MessageProcessor</a></td>
             <td class="jd-descrcol" width="100%">UpdateByKey1MessageProcessor invokes the <code><a href="../java/org/mule/module/BridgeTableModule.html#updateByKey1(java.lang.String, java.lang.String)">updateByKey1(java.lang.String, java.lang.String)</a></code> method in <code><a href="../java/org/mule/module/BridgeTableModule.html">BridgeTableModule</a></code>.&nbsp;</td>
         </tr>
     
     
         <tr class="alt-color api apilevel-" >
-            <td class="jd-linkcol"><a href="../java/org/mule/module/config/spring/UpdateByKey2DefinitionParser.html">UpdateByKey2DefinitionParser</a></td>
+            <td class="jd-linkcol"><a href="../java/org/mule/module/config/UpdateByKey2DefinitionParser.html">UpdateByKey2DefinitionParser</a></td>
             <td class="jd-descrcol" width="100%">&nbsp;</td>
         </tr>
     
     
         <tr class=" api apilevel-" >
-            <td class="jd-linkcol"><a href="../java/org/mule/module/config/UpdateByKey2MessageProcessor.html">UpdateByKey2MessageProcessor</a></td>
+            <td class="jd-linkcol"><a href="../java/org/mule/module/processors/UpdateByKey2MessageProcessor.html">UpdateByKey2MessageProcessor</a></td>
             <td class="jd-descrcol" width="100%">UpdateByKey2MessageProcessor invokes the <code><a href="../java/org/mule/module/BridgeTableModule.html#updateByKey2(java.lang.String, java.lang.String)">updateByKey2(java.lang.String, java.lang.String)</a></code> method in <code><a href="../java/org/mule/module/BridgeTableModule.html">BridgeTableModule</a></code>.&nbsp;</td>
         </tr>
     
     
         <tr class="alt-color api apilevel-" >
-            <td class="jd-linkcol"><a href="../java/org/mule/module/config/spring/UpsertByKey1DefinitionParser.html">UpsertByKey1DefinitionParser</a></td>
+            <td class="jd-linkcol"><a href="../java/org/mule/module/config/UpsertByKey1DefinitionParser.html">UpsertByKey1DefinitionParser</a></td>
             <td class="jd-descrcol" width="100%">&nbsp;</td>
         </tr>
     
     
         <tr class=" api apilevel-" >
-            <td class="jd-linkcol"><a href="../java/org/mule/module/config/UpsertByKey1MessageProcessor.html">UpsertByKey1MessageProcessor</a></td>
+            <td class="jd-linkcol"><a href="../java/org/mule/module/processors/UpsertByKey1MessageProcessor.html">UpsertByKey1MessageProcessor</a></td>
             <td class="jd-descrcol" width="100%">UpsertByKey1MessageProcessor invokes the <code><a href="../java/org/mule/module/BridgeTableModule.html#upsertByKey1(java.lang.String, java.lang.String)">upsertByKey1(java.lang.String, java.lang.String)</a></code> method in <code><a href="../java/org/mule/module/BridgeTableModule.html">BridgeTableModule</a></code>.&nbsp;</td>
         </tr>
     
     
         <tr class="alt-color api apilevel-" >
-            <td class="jd-linkcol"><a href="../java/org/mule/module/config/spring/UpsertByKey2DefinitionParser.html">UpsertByKey2DefinitionParser</a></td>
+            <td class="jd-linkcol"><a href="../java/org/mule/module/config/UpsertByKey2DefinitionParser.html">UpsertByKey2DefinitionParser</a></td>
             <td class="jd-descrcol" width="100%">&nbsp;</td>
         </tr>
     
     
         <tr class=" api apilevel-" >
-            <td class="jd-linkcol"><a href="../java/org/mule/module/config/UpsertByKey2MessageProcessor.html">UpsertByKey2MessageProcessor</a></td>
+            <td class="jd-linkcol"><a href="../java/org/mule/module/processors/UpsertByKey2MessageProcessor.html">UpsertByKey2MessageProcessor</a></td>
             <td class="jd-descrcol" width="100%">UpsertByKey2MessageProcessor invokes the <code><a href="../java/org/mule/module/BridgeTableModule.html#upsertByKey2(java.lang.String, java.lang.String)">upsertByKey2(java.lang.String, java.lang.String)</a></code> method in <code><a href="../java/org/mule/module/BridgeTableModule.html">BridgeTableModule</a></code>.&nbsp;</td>
         </tr>
     

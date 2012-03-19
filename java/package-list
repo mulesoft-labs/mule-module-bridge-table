@@ -1,6 +1,8 @@
 org.mule.module
+org.mule.module.adapters
 org.mule.module.bridgetable
 org.mule.module.bridgetable.dialect
 org.mule.module.config
-org.mule.module.config.spring
+org.mule.module.processors
+org.mule.module.transformers
 
